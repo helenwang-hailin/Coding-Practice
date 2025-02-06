@@ -5,7 +5,7 @@ class Node:
         self.right = right
 
 def serialize(root):
-    """Encodes a tree to a single string."""
+    # Encodes a tree to a single string.
     def helper(node):
         if node is None:
             return "#"
@@ -14,7 +14,7 @@ def serialize(root):
     return helper(root)
 
 def deserialize(data):
-    """Decodes your encoded data to tree."""
+    #Decodes your encoded data to tree.
     def helper(values):
         val = next(values)
         if val == "#":
